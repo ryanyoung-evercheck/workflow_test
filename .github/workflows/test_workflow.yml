@@ -1,12 +1,13 @@
+---
 name: Test workflow
 on:
   push:
     branchs:
-	  - master
-	  - test
+      - master
+      - test
 jobs:
   test_job:
     name: test_job
-	runs-on: ubuntu-22.04
-	steps:
-	  - run: echo "The test workflow is running!"
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "The test workflow is running!"
